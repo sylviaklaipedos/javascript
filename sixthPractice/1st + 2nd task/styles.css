@@ -1,0 +1,14 @@
+student-card {
+    border: 2px black;
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+}
+
+student-name {
+    font-size: 10px;
+}
+
+student-age {
+    font-size: 5px;
+}
