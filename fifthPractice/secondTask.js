@@ -6,15 +6,6 @@ let allUsers = [
     {name: 'Антон', age: 7}
 ]
 
-function getOlderUserArray(allUsers) {
-    let oldestUser = allUsers[0];
-    for (let i = 0; i < allUsers.length; ++i) {
-        if (allUsers[i].age > oldestUser.age) {
-            oldestUser = allUsers[i]
-        }
-    }
-    return oldestUser.name;
-}
+let result = allUsers.sort((a, b) => b.age - a.age)
 
-let result = getOlderUserArray(allUsers);
-console.log(result);
+console.log(result[0].name);
